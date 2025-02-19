@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: none;
+  background-image: url("images/cityskyline.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#game {
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+
+/* Small Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  #game {
+    width: 90%;
+    height: 50%;
+  }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #game {
+    width: 80%;
+    height: 60%;
+  }
+}
+
+/* Larger Screens (above 1024px) */
+@media (min-width: 1025px) {
+  #game {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.pipe {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  animation: movePipe 5s linear forwards;
+}
+
+.pipe-top,
+.pipe-bottom {
+  width: 100%;
+  position: absolute;
+  object-fit: fill;
+}
+
+.pipe-top {
+  top: 0;
+  height: 30%;
+}
+
+.pipe-bottom {
+  bottom: 0;
+  height: 30%;
+}
+
+.pipe-middle {
+  width: 100%;
+  height: 40%;
+  background-color: transparent;
+  position: absolute;
+  top: 30%;
+}
+
+@keyframes movePipe {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -60px;
+  }
+}
+
+#bird {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 1000;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+#menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+}
+
+#menu button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: monospace;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#play-button {
+  background-color: green;
+  color: white;
+  font-family: monospace;
+}
+
+#restart-button {
+  background-color: red;
+  color: white;
+  font-family: monospace;
+}
+
+#score {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+}
+
+#final-score {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: monospace;
+  background-color: thistle;
+  padding: 4px 8px;
+  border-radius: 8px;
+  z-index: 1000;
+}
