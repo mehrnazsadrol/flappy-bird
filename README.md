@@ -29,5 +29,5 @@ A simple Flappy Bird-style game built using HTML, CSS, and JavaScript. The game 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/flappy-bird-clone.git
-   cd flappy-bird-clone
+   git clone https://github.com/mehrnazsadrol/flappy-bird.git
+   cd flappy-bird
