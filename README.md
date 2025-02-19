@@ -1,4 +1,4 @@
-# Flappy Bird Clone
+# Flappy Bird
 
 A simple Flappy Bird-style game built using HTML, CSS, and JavaScript. The game features a bird that the player must navigate through gaps in pipes by making it jump. The goal is to score as many points as possible without colliding with the pipes.
 
